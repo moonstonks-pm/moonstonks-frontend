@@ -1,0 +1,40 @@
+[
+  {
+  "id": 4,
+  "name": "Daniel Portfolio",
+  "value": 0.0,
+  "revenue": 0.0,
+  "revenuePercent": 0.0,
+  "holdingsAmount": 0,
+  "holdings": [
+    {
+      "id": 5,
+      "entryPrice": 0.0,
+      "currentPrice": 112.0,
+      "amountShares": 2,
+      "Symbol": "AMZN",
+      "Name": null,
+      "Description": null,
+      "Country": null,
+      "AssetType": null,
+      "Currency": null,
+      "Sector": null,
+      "Industry": null
+    },
+    {
+      "id": 6,
+      "entryPrice": 0.0,
+      "currentPrice": 112.0,
+      "amountShares": 2,
+      "Symbol": "AAPL",
+      "Name": null,
+      "Description": null,
+      "Country": null,
+      "AssetType": null,
+      "Currency": null,
+      "Sector": null,
+      "Industry": null
+    }
+  ]
+  }
+]
