@@ -1,0 +1,49 @@
+.sidemenu {
+    font-family: "SF Pro", Arial, sans-serif;
+    font-size: 28px;
+    background: #1C2541;
+    position: absolute;
+    width: 270px;
+    height: 100vh;
+}
+
+.sidemenu .greeting {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 0px;
+    padding-left: 50px;
+}
+.sidemenu .name {
+    padding-left: 50px;
+}
+
+.sidemenu .sideButtons {
+    list-style: none;
+    position: absolute;
+    top: 30%;
+
+    li {
+        margin-top: 20px;
+        text-decoration: none;
+
+        button {
+            width: 200px;
+            height: 50px;
+            left: 35px;
+            background: #0B1533;
+            border-radius: 10px;
+            border: none;
+            font-weight: 700;
+            font-size: 28px;
+            text-decoration: none;
+            color: white;
+
+            .button:active {
+                background: #5BC0BE;
+            }
+        }
+
+    }
+}
