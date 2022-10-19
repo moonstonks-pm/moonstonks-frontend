@@ -1,9 +1,9 @@
-import {render} from "@testing-library/react";
+import './Searchbar.scss';
 
 export default function Searchbar () {
     return (
             <div className="wrapper">
-                <input/>
+                <input type="text" placeholder="Asset search"/>
             </div>
     );
 }

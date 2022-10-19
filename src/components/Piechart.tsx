@@ -1,58 +1,42 @@
 import React from "react";
-import { Doughnut } from "react-chartjs-2";
-import {Chart, ArcElement} from 'chart.js'
-import 'chartjs-plugin-datalabels';
+import CanvasJSReact from "../canvasjs.react";
 
 import './Piechart.scss';
 
-Chart.register(ArcElement);
-
-/* const labels = data.map((data) => {
-    data.holdings.map((holdings) => {
-        holdings.Symbol;
-    })
-});
-
-const portfolioName = data.map((data) => {
-    data.name;
-});
-
-const portfolioAmount = data.map((data) => {
-    data.holdings.map((holdings) => {
-        holdings.amountShares;
-    })
-});
-
-*/
-
-const options = {
-    plugins: {
-        datalabels: {
-            color: '#36A2EB'
-        }
-    }
-};
-
-const pieData = {
-    labels: ['AMZN', 'AAPL'],
-    datasets: [
-        {
-            label: '# of shares',
-            data: [300, 50],
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)'
-            ],
-            hoverOffset: 4,
-        },
-    ],
-    resonsive: false,
-};
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 export default function Piechart() {
+    const stockValue = 69.757 + " €";
+    const options = {
+        backgroundColor: null,
+        animationEnabled: true,
+        subtitles: [{
+            text: stockValue,
+            fontColor: "#FFF",
+            fontFamily: "Arial",
+            verticalAlign: "center",
+            fontSize: 36,
+            dockInsidePlotArea: true
+        }],
+        data: [{
+            type: "doughnut",
+            radius: "90%",
+            innerRadius: "75%",
+            yValueFormatString: "#,###'%'",
+            //API here
+            dataPoints: [
+                { name: "Unsatisfied", y: 5 },
+                { name: "Very Unsatisfied", y: 31 },
+                { name: "Very Satisfied", y: 40 },
+                { name: "Satisfied", y: 17 },
+                { name: "Neutral", y: 7 }
+            ]
+        }]
+    }
+
     return(
         <div className="donut">
-            <Doughnut data={pieData} options={options} />
+            <CanvasJSChart options = {options} />
         </div>
     );
 };

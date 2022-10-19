@@ -1,5 +1,5 @@
 .homescreen {
-  font-family: "SF Pro", Arial, sans-serif;
+  font-family: "Roboto", "SF Pro", Arial, sans-serif;
   font-size: 28px;
   float: right;
   margin-left: 270px;
@@ -8,10 +8,101 @@
   background: #3A506B;
   border-radius: 100px 0 0 100px;
   position: relative;
+
   .infos {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 25%;
+    left: 25%;
     transform: translate(-50%, -50%);
+  }
+
+  .info {
+    position: absolute;
+    top: 18.5%;
+    left: 40%;
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      color: #BDBDBD;
+      font-size: 16px;
+      font-weight: bolder;
+      display: inline;
+      margin-left: 5px;
+    }
+  }
+
+  .overview {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+
+    .general {
+      display: inline;
+      p {
+        display: inline;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #BDBDBD;
+      }
+      .up {
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        height: 21px;
+        width: 50px;
+        background-color: #D1FAE4;
+        border-radius: 5px;
+
+        p {
+          color: #498971;
+          font-weight: bold;
+          text-align: center;
+          width: 98%;
+        }
+      }
+    }
+
+    h2 {
+      color: #fff;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .revenue {
+      display: inline;
+      margin-bottom: 0;
+      p {
+        display: inline-flex;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #BDBDBD;
+
+        .dividends {
+          color: #D1FAE4;
+          margin-left: 5px;
+        }
+      }
+      h2 {
+        color: #D1FAE4;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 3px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .linechart {
+    padding-top: 30%;
+    margin-left: 5%;
   }
 }
