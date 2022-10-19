@@ -1,4 +1,13 @@
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    Link
+} from "react-router-dom";
+
 import './Sidemenu.scss';
+import Homepage from "./Homepage";
+import Metadata from "./Metadata";
 
 export default function Sidemenu() {
     function changeButton() {
@@ -14,8 +23,8 @@ export default function Sidemenu() {
                 </div>
             </div>
             <ul className="sideButtons">
-                <li><button type="button" onClick={changeButton}>Home</button></li>
-                <li><button type="button" onClick={changeButton}>About</button></li>
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/metadata"}>Metadata</Link></li>
                 <li><button type="button" onClick={changeButton}>Contact</button></li>
             </ul>
         </div>

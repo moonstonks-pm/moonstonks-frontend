@@ -28,7 +28,7 @@
         margin-top: 20px;
         text-decoration: none;
 
-        button {
+        Link {
             width: 200px;
             height: 50px;
             left: 35px;
@@ -39,10 +39,6 @@
             font-size: 28px;
             text-decoration: none;
             color: white;
-
-            .button:active {
-                background: #5BC0BE;
-            }
         }
 
     }
