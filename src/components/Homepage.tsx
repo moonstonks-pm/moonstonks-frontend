@@ -4,6 +4,7 @@ import Searchbar from "./Searchbar";
 import React, {useEffect, useState} from "react";
 import Linechart from "./Linechart";
 import axios from "axios";
+import StromberQuotes from "./StromberQuotes";
 
 var stockValue = 0;
 var portfolioRevenue = 0;
@@ -29,6 +30,7 @@ export default function Homepage() {
     }, [portfolio]);
     return (
         <div className="homescreen">
+            <div> <StromberQuotes/> </div>
             <div className="searchbar">
                 <Searchbar />
             </div>

@@ -1,0 +1,20 @@
+div{
+  block-size: content-box;
+}
+.strombergquote{
+  font-size: 24px;
+  background: -webkit-linear-gradient(45deg,#f765a3, #16bfd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: inherit;
+  margin-left: 10rem;
+  right: 3px;
+}
+
+.strombergdata{
+  font-size: 15px;
+  color: #ff9e44;
+  position: inherit;
+  margin-left: 50rem;
+  right: 3px;
+}
