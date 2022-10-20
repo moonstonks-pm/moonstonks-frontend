@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sidemenu from "./components/Sidemenu";
+import Homepage from "./components/Homepage";
+import {Route, Routes} from "react-router-dom";
+import Metadata from "./components/Metadata";
+import Edit from "./components/Edit";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+            <div className="App">
+                <div><Sidemenu /></div>
+                <div>
+                    <Routes>
+                        <Route path={"/"} element={<Homepage />}></Route>
+                        <Route path={"/metadata"} element={<Metadata />}></Route>
+                        <Route path={"/edit"} element={<Edit />}></Route>
+                    </Routes>
+                </div>
+            </div>
   );
 }
-
-export default App;
