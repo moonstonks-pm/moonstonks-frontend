@@ -28,7 +28,7 @@
         margin-top: 20px;
         text-decoration: none;
 
-        Link {
+        button {
             width: 200px;
             height: 50px;
             left: 35px;
@@ -39,6 +39,10 @@
             font-size: 28px;
             text-decoration: none;
             color: white;
+            Link {
+                text-decoration: none;
+                color: white;
+            }
         }
 
     }

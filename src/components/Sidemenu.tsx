@@ -23,9 +23,9 @@ export default function Sidemenu() {
                 </div>
             </div>
             <ul className="sideButtons">
-                <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/metadata"}>Metadata</Link></li>
-                <li><button type="button" onClick={changeButton}>Contact</button></li>
+                <li><button><Link to={"/"}>Home</Link></button></li>
+                <li><button><Link to={"/metadata"}>Metadata</Link></button></li>
+                <li><button><Link to={"/edit"}>Portfolio</Link></button></li>
             </ul>
         </div>
     );

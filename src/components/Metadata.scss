@@ -8,4 +8,18 @@
   background: #3A506B;
   border-radius: 100px 0 0 100px;
   position: relative;
+
+  .piemeta {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .list {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    top:25%;
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
 }

@@ -1,0 +1,16 @@
+.container{
+  width: 360px;
+  height: 580px;
+  background-color: #1C2541;
+  border-radius: 15px;
+  .stocklist {
+    list-style: none;
+    margin-right: 15px;
+    li {
+      text-decoration: none;
+      color: #fff;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+}

@@ -8,7 +8,7 @@ export default function Linechart() {
             animationEnabled: true,
             exportEnabled: false,
             backgroundColor: null,
-            width: 1400,
+            width: 1000,
             height: 300,
             theme: "dark2",
 
@@ -62,7 +62,7 @@ export default function Linechart() {
                 type: "line",
                 toolTipContent: "Week {x}: {y}%",
                 showInLegend: true,
-                legendText: "BTC",
+                legendText: "IBM",
                 dataPoints: [
                     { x: 1, y: 20 },
                     { x: 2, y: 30 },
